@@ -1,0 +1,16 @@
+button{
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.increament{
+  background-color: rgb(44, 111, 8);
+  color: #fff;
+}
+.decreament{
+  background-color: red;
+  color: #fff;
+}
