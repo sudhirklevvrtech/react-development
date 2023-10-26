@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai';
-import {BiSolidRightArrow} from 'react-icons/bi';
+import {BiSolidRightArrow, BiSolidDownArrow} from 'react-icons/bi';
 
 const App = () => {
   
@@ -72,7 +72,7 @@ const App = () => {
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#" onClick={dropdownMenu} className='responsive-dropdown'>
-                Service <BiSolidRightArrow />
+                Service {dropdown ? <BiSolidDownArrow /> : <BiSolidRightArrow />}
                 <ul className={`responsive-dropdown-menu ${dropdown ? 'active' : ''}`}>
                   <li><a href="#">Web Development</a></li>
                   <li><a href="#">App Development</a></li>
